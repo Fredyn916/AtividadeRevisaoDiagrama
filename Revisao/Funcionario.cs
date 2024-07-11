@@ -9,7 +9,12 @@ namespace Revisao
     public class Funcionario : Pessoa
     {
         private int Matricula { get; set; }
-        public string PlacaVeiculo { get; set; }
+        private string PlacaVeiculo { get; set; }
+
+        public Funcionario(string plavaveiculo)
+        {
+            PlacaVeiculo = plavaveiculo;
+        }
 
         public int MatriculaFuncionario()
         {

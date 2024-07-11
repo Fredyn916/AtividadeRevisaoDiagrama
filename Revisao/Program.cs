@@ -1,10 +1,9 @@
 ﻿using Revisao;
 
-Funcionario fun = new Funcionario();
+Funcionario fun = new Funcionario("PJX9594");
 Dependente den = new Dependente();
 Automovel aut = new Automovel();
 
-fun.PlacaVeiculo = "PJX9594";
 if (fun.VerificarVeiculo(aut))
 {
     Console.WriteLine("A placa contém 7 caracteres!");
