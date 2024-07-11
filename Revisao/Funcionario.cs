@@ -8,12 +8,25 @@ namespace Revisao
 {
     public class Funcionario : Pessoa
     {
-        public int Matricula { get; set; }
+        private int Matricula { get; set; }
         public string PlacaVeiculo { get; set; }
+
+        public int MatriculaFuncionario()
+        {
+            int matricula = Matricula;
+            return matricula;
+        }
 
         public bool VerificarVeiculo(Automovel automovel)
         {
-
+            if(PlacaVeiculo.Length == 7)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
